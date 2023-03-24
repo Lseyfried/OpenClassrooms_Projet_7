@@ -5,13 +5,14 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import BgImage from "./components/BgImage";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import BookingList from "./components/BookingList";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
       <BgImage />
+      <BookingList />
       <Home />
     </Router>
   </React.StrictMode>
