@@ -1,0 +1,21 @@
+a {
+  text-decoration-style: none;
+  color: #ff6060;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 80px;
+  .nav {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    white-space: nowrap;
+    // height: 20px;
+  }
+}
