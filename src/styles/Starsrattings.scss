@@ -1,0 +1,15 @@
+.starsratting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.greyStar {
+  display: flex;
+}
+.ratingStars {
+  display: flex;
+  justify-content: space-between;
+}
+.p-stars {
+  background-color: white;
+}

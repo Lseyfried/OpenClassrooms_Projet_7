@@ -1,0 +1,37 @@
+button {
+  cursor: pointer;
+}
+article {
+  //   width: auto;
+  background-color: white;
+  //   height: 500px;
+}
+
+.Propos_unList {
+  width: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 390px;
+}
+
+.Propos_List {
+  width: 100%;
+  background-color: #ff6060;
+  padding: 10px;
+  border-radius: 10px;
+  text-align-last: left;
+  color: white;
+  border: none;
+}
+
+p {
+  display: hidden;
+  color: #ff6060;
+  margin: 0;
+  width: 100%;
+  //   margin-bottom: 30px;
+  //   padding: 9px;
+  background-color: #f7f7f7;
+}

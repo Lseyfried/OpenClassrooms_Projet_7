@@ -1,0 +1,81 @@
+.articleProduct {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: inherit;
+  width: auto;
+}
+
+.titleProduct {
+  font-size: 36px;
+  color: #ff6060;
+  margin-right: auto;
+  margin: 0;
+}
+.locationtitle {
+  font-size: 18px;
+  color: #ff6060;
+  margin-right: auto;
+  margin: 0;
+}
+
+.ListProduct {
+  display: flex;
+  justify-content: space-between;
+  width: 115%;
+}
+.tagsProduct {
+  color: white;
+  background-color: #ff6060;
+  border-radius: 10px;
+  width: 100px;
+  font-size: 14px;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height: 20px;
+  box-sizing: content-box;
+}
+.enTete {
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.ownerProduct {
+  display: flex;
+  margin: 0;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: auto;
+  flex-direction: column-reverse;
+}
+.img-logement {
+  border-radius: 95%;
+  display: flex;
+  align-self: center;
+  margin-left: 10px;
+}
+.nameOwner {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80px;
+}
+
+.flex-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusLogement {
+  display: flex;
+  flex-direction: column;
+}

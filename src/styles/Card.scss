@@ -1,0 +1,60 @@
+// h2 {
+//   font-size: 24px;
+// }
+
+.homePage {
+  background-color: #f6f6f6;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1240px;
+  justify-content: center;
+  border-radius: 10px;
+  section {
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    width: 340px;
+    height: 500px;
+    justify-content: space-around;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: transform 0.5s linear;
+    .section-img {
+      flex-grow: 1;
+      display: flex;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .log-title {
+      font-size: 24px;
+      margin-left: 10px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 400px;
+      bottom: 500px;
+      left: 10px;
+      right: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.18);
+      z-index: 1;
+    }
+  }
+}
+
+.LinkCard {
+  // margin: 10px;
+  height: 530px;
+  display: flex;
+  flex-wrap: wrap;
+}

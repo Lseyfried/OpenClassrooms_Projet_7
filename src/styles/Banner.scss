@@ -1,0 +1,19 @@
+.Bg-img {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  opacity: 1.5;
+  cursor: pointer;
+}
+.bg-string {
+  cursor: pointer;
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 23%;
+  bottom: 590px;
+  left: 391px;
+  right: 26%;
+}
