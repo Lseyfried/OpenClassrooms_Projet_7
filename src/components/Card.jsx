@@ -8,7 +8,7 @@ export default function Card() {
     <article className="homePage">
       {logementList.map((logement) => (
         <Link className="LinkCard" to={`/products/${logement.id}`}>
-          <section key={logement.id} className="section">
+          <section key={logement.id} className="homePage section">
             <img
               width="340px"
               height="500px"

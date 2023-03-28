@@ -2,36 +2,74 @@ button {
   cursor: pointer;
 }
 article {
-  //   width: auto;
   background-color: white;
-  //   height: 500px;
+}
+
+.img-Banner {
+  margin-bottom: 50px;
+  .Bg-Apropos {
+    object-fit: cover;
+  }
+}
+
+.Propos_title {
+  padding: 9px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .Propos_List {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ff6060;
+
+    border-radius: 10px;
+    text-align-last: left;
+    color: white;
+  }
 }
 
 .Propos_unList {
-  width: auto;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 390px;
-}
-
-.Propos_List {
-  width: 100%;
-  background-color: #ff6060;
-  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
   border-radius: 10px;
-  text-align-last: left;
-  color: white;
-  border: none;
-}
+  margin-bottom: 20px;
 
-p {
-  display: hidden;
-  color: #ff6060;
-  margin: 0;
-  width: 100%;
-  //   margin-bottom: 30px;
-  //   padding: 9px;
-  background-color: #f7f7f7;
+  .accordeonMenu {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    .arrowAccordeon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+      transform: rotate(0deg);
+      padding: 0;
+      margin: 10px;
+      transition: all 0.5s;
+    }
+  }
+
+  .content {
+    color: #ff6060;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+
+  &.rounded {
+    border-radius: 10px;
+    background-color: #ff6060;
+  }
 }
