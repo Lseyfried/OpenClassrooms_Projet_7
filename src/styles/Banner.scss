@@ -1,3 +1,11 @@
+@media screen and (max-width: 425px) {
+  .img-Banner .bg-string {
+    top: 14%;
+    left: 50%;
+    font-size: 67%;
+  }
+}
+
 .img-Banner {
   .Bg-img {
     position: relative;
@@ -15,7 +23,6 @@
   color: white;
   position: absolute;
   top: 13%;
-  bottom: 713px;
-  left: 361px;
-  right: 26%;
+  left: 50%;
+  transform: translate(-50%, 80%);
 }

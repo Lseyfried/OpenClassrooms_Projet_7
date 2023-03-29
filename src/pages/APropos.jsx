@@ -5,10 +5,9 @@ import Header from "../components/Header";
 import "../styles/Banner.scss";
 import { Link } from "react-router-dom";
 import imageBanner from "../assets/background-Apropos.png";
-
 import Footer from "../components/Footer";
 import { accordionData } from "../components/accordionData";
-import Accordion from "../components/AccordionApropos";
+import AccordionApropos from "../components/AccordionApropos";
 
 export default function APropos() {
   return (
@@ -27,7 +26,7 @@ export default function APropos() {
       </div>
 
       {accordionData.map(({ title, content, index }) => (
-        <Accordion title={title} content={content} key={index} />
+        <AccordionApropos title={title} content={content} key={index} />
       ))}
 
       <footer>

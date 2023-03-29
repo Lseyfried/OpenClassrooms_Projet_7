@@ -18,7 +18,7 @@ export default function DataStatus() {
       content: (
         <div className="equipementColumn">
           {equipement.map((item, index) => (
-            <p key={index}>{item}</p>
+            <div key={index}>{item}</div>
           ))}
         </div>
       ),

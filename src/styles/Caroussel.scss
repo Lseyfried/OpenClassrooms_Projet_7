@@ -29,6 +29,7 @@
 .carousel-next {
   position: absolute;
   top: 50%;
+  // left: 93%;
   transform: translateY(-50%);
   width: 65px;
   font-size: 24px;
@@ -40,9 +41,9 @@
 }
 
 .carousel-prev {
-  left: 0;
+  left: 20px;
 }
 
 .carousel-next {
-  right: 0;
+  right: 20px;
 }

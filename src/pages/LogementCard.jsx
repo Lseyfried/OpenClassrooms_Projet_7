@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+import { useParams, useNavigate } from "react-router-dom";
 import logementList from "../data/logements.json";
 import "../styles/LogementCard.scss";
 import Stars from "../components/Stars";
@@ -10,7 +12,21 @@ import Caroussel from "../components/Caroussel";
 
 export default function LogementCard() {
   const { id } = useParams();
-  const logementProduct = logementList.find((logement) => logement.id === id);
+  const navigate = useNavigate();
+  const [logementProduct, setLogementProduct] = useState(null);
+
+  useEffect(() => {
+    const product = logementList.find((logement) => logement.id === id);
+    if (product) {
+      setLogementProduct(product);
+    } else {
+      navigate("/error");
+    }
+  }, [id, navigate]);
+
+  if (!logementProduct) {
+    return null;
+  }
   const tags = logementProduct.tags;
   return (
     <div className="body">
