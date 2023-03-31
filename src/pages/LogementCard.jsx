@@ -14,7 +14,7 @@ export default function LogementCard() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [logementProduct, setLogementProduct] = useState(null);
-
+  // Revoir nom variable
   useEffect(() => {
     const product = logementList.find((logement) => logement.id === id);
     if (product) {
@@ -30,9 +30,7 @@ export default function LogementCard() {
   const tags = logementProduct.tags;
   return (
     <div className="body">
-      <header>
-        <Header />
-      </header>
+      <Header />
 
       <img
         width="100%"
@@ -68,7 +66,7 @@ export default function LogementCard() {
           </article>
         </article>
       </article>
-
+      {/* Revoir la structure */}
       <article className="divised">
         <DataStatus />
       </article>

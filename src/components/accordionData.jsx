@@ -1,3 +1,5 @@
+// Mettre cette variable ailleurs
+
 export const accordionData = [
   {
     title: "Fiabialité",

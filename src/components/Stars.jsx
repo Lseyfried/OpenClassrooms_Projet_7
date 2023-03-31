@@ -3,7 +3,7 @@ import stars from "../assets/Star.svg";
 import whiteStar from "../assets/whiteStar.svg";
 import { useParams } from "react-router-dom";
 import logementList from "../data/logements.json";
-
+//props pour stars
 export default function Stars() {
   const { id } = useParams();
   const logementProduct = logementList.find((rating) => rating.id === id);

@@ -1,3 +1,10 @@
+@media screen and (max-width: 768px) {
+  .suiteAccordeon {
+    flex-direction: column;
+    height: 200px;
+  }
+}
+
 .unlistStatus {
   display: flex;
   flex-direction: column;
@@ -14,7 +21,7 @@
   margin-top: 100px;
 }
 .listStatus {
-  width: 40%;
+  width: 45%;
   &_descriptionStatus {
     font-size: 18px;
     border: none;

@@ -1,6 +1,6 @@
 @media screen and (max-width: 425px) {
   body .img-Banner {
-    height: 60px;
+    // height: 60px;
   }
   .img-Banner .bg-string {
     top: 30%;
@@ -12,8 +12,8 @@
 .img-Banner {
   position: relative;
   width: 100%;
-  height: 259px;
-  // padding-bottom: 18%;
+
+  padding-bottom: 25%;
   .Bg-img {
     position: absolute;
     top: 0;
@@ -30,7 +30,7 @@
   display: flex;
   color: white;
   position: absolute;
-  font-size: 2rem;
+  // font-size: 2rem;
   top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);

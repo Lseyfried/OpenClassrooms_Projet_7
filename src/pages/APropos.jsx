@@ -13,7 +13,7 @@ export default function APropos() {
   return (
     <div className="body">
       <Header />
-      <div className="img-Banner">
+      <div className="img-BannerApropos">
         <Link to="/">
           <img
             width="100%"
@@ -28,10 +28,9 @@ export default function APropos() {
       {accordionData.map(({ title, content, index }) => (
         <AccordionApropos title={title} content={content} key={index} />
       ))}
+      {/* Collapse comme nom de composant */}
 
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

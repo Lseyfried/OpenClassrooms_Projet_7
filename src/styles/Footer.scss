@@ -1,3 +1,9 @@
+@media screen and (max-width: 768px) {
+  footer .footer_title {
+    font-size: 12px;
+  }
+}
+
 footer {
   background-color: black;
   margin-top: 50px;
@@ -13,6 +19,6 @@ footer {
     justify-content: center;
     padding-bottom: 40px;
     color: white;
-    font-size: 24px;
+    // font-size: 24px;
   }
 }

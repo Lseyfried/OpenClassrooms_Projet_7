@@ -13,8 +13,8 @@ export default function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/A-Propos" element={<APropos />} />
         <Route path="/products/:id" element={<LogementCard />} />
-        <Route path="*" element={<ErrorPage />} />
         <Route path="/error" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );

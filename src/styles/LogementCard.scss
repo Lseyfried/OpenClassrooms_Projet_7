@@ -1,9 +1,17 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .enTete {
     flex-direction: column;
   }
   .enTete .ownerProduct {
     flex-direction: initial;
+  }
+  ul {
+    align-self: auto;
+  }
+  ul .tagsProduct {
+    font-size: 12px;
+    align-items: center;
+    padding: 14px;
   }
 }
 .articleProduct {
@@ -30,7 +38,8 @@
 .ListProduct {
   display: flex;
   justify-content: space-between;
-  width: 115%;
+  max-width: 100%;
+  align-self: auto;
 }
 .tagsProduct {
   color: white;
@@ -39,6 +48,7 @@
   font-size: 14px;
   padding: 9px;
   display: flex;
+
   justify-content: center;
   cursor: pointer;
   height: 20px;

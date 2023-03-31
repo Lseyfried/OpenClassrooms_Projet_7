@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/APropos.scss";
 import Arrow from "../assets/Arrow.png";
 import ArrowUp from "../assets/ArrowUp.png";
-
+// Qu'un seul collaspse composant
 export default function AccordionApropos({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   return (

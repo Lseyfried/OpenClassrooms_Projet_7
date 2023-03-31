@@ -2,17 +2,17 @@ import "../styles/Caroussel.scss";
 import { useState } from "react";
 import leftArrow from "../assets/leftArrow.png";
 import rightArrow from "../assets/rightArrow.png";
-import logementList from "../data/logements.json";
+import logementList from "../data/logements.json"; //éviter répétition récupérer 1 seule fois avec props
 import { useParams } from "react-router-dom";
 
 const Caroussel = () => {
   const { id } = useParams();
-  const logementProduct = logementList.find((logement) => logement.id === id);
+  const logementProduct = logementList.find((logement) => logement.id === id); //envoyer avec des props éviter répétition
   const images = logementProduct.pictures;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevSlide = () => {
-    const index = (currentIndex + images.length - 1) % images.length;
+    const index = (currentIndex + images.length - 1) % images.length; //modulo remplacer par if et else
     setCurrentIndex(index);
   };
 
@@ -25,13 +25,18 @@ const Caroussel = () => {
     <div className="carousel">
       <div
         className="carousel-slide"
-        style={{ left: -currentIndex * 100 + "%" }}
+        style={{ left: -currentIndex * 100 + "%" }} //essayer aussi opacité
       >
-        {images.map((image, index) => (
-          <div key={index} className="carousel-item">
-            <img src={image} alt={`Slide ${index}`} />
-          </div>
-        ))}
+        {images.map(
+          (
+            image,
+            index //images[currentindex]
+          ) => (
+            <div key={index} className="carousel-item">
+              <img src={image} alt={`Slide ${index}`} />
+            </div>
+          )
+        )}
       </div>
       <button className="carousel-prev" onClick={goToPrevSlide}>
         <img src={leftArrow} alt="fleche gauche" />
