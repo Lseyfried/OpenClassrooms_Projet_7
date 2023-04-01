@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
-
-import { useParams, useNavigate } from "react-router-dom";
+import stars from "../assets/Star.svg";
+import whiteStar from "../assets/whiteStar.svg";
+import { useNavigate, useParams } from "react-router-dom";
 import logementList from "../data/logements.json";
 import "../styles/LogementCard.scss";
 import Stars from "../components/Stars";
 import DataStatus from "../components/DataStatus";
 import Caroussel from "../components/Caroussel";
 
-export default function LogementCard() {
+export default function LogementCard({ logementId }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [logementProduct, setLogementProduct] = useState(null);
-  // Revoir nom variable
+  const product = logementList.find((logement) => logement.id === id);
   useEffect(() => {
     const product = logementList.find((logement) => logement.id === id);
     if (product) {
@@ -42,7 +43,7 @@ export default function LogementCard() {
           </ul>
         </article>
         <article className="ownerProduct">
-          <Stars />
+          <Stars stars={stars} whiteStar={whiteStar} logement={id} />
           <article className="flex-row">
             <h2 className="nameOwner"> {logementProduct.host.name}</h2>
 
@@ -56,9 +57,9 @@ export default function LogementCard() {
           </article>
         </article>
       </article>
-      <DataStatus />
+      <DataStatus logementId={product} />
       <article className="carroussel">
-        <Caroussel />
+        <Caroussel logements={product} />
       </article>
     </div>
   );

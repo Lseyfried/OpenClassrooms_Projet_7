@@ -59,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  flex-wrap: wrap;
   align-self: auto;
 }
 .tagsProduct {
@@ -68,6 +69,7 @@
   font-size: 14px;
   padding: 9px;
   display: flex;
+  margin: 10px;
 
   justify-content: center;
   cursor: pointer;

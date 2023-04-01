@@ -1,10 +1,9 @@
 import "../styles/Starsrattings.scss";
-import stars from "../assets/Star.svg";
-import whiteStar from "../assets/whiteStar.svg";
+
 import { useParams } from "react-router-dom";
 import logementList from "../data/logements.json";
 //props pour stars
-export default function Stars() {
+export default function Stars({ stars, whiteStar }) {
   const { id } = useParams();
   const logementProduct = logementList.find((rating) => rating.id === id);
   const rate = logementProduct.rating;

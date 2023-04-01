@@ -2,17 +2,13 @@ import "../styles/Caroussel.scss";
 import { useState } from "react";
 import leftArrow from "../assets/leftArrow.png";
 import rightArrow from "../assets/rightArrow.png";
-import logementList from "../data/logements.json"; //éviter répétition récupérer 1 seule fois avec props
-import { useParams } from "react-router-dom";
 
-const Caroussel = () => {
-  const { id } = useParams();
-  const logementProduct = logementList.find((logement) => logement.id === id); //envoyer avec des props éviter répétition
-  const images = logementProduct.pictures;
+const Caroussel = ({ logements }) => {
+  const images = logements.pictures;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevSlide = () => {
-    const index = (currentIndex + images.length - 1) % images.length; //modulo remplacer par if et else
+    const index = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
     setCurrentIndex(index);
   };
 
@@ -29,7 +25,7 @@ const Caroussel = () => {
       >
         {images.map((image, index) => (
           <div key={image} className="carousel-item">
-            <img src={images[currentIndex]} alt={`Slide ${index}`} />
+            <img src={image} alt={`Slide ${index}`} />
           </div>
         ))}
       </div>

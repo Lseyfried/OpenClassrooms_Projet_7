@@ -1,13 +1,13 @@
-import { useParams } from "react-router-dom";
-import logementList from "../data/logements.json";
+// import { useParams } from "react-router-dom";
+// import logementList from "../data/logements.json";
 // import AccordionStatus from "./AccordionStatus";
 import "../styles/Status.scss";
 import Collapse from "./Collapse";
-export default function DataStatus() {
-  const { id } = useParams();
-  const logementProduct = logementList.find((logement) => logement.id === id);
-  const description = logementProduct.description;
-  const equipement = logementProduct.equipments;
+export default function DataStatus({ logementId }) {
+  // const { id } = useParams();
+  // const logementProduct = logementList.find((logement) => logement.id === id);
+  const description = logementId.description;
+  const equipement = logementId.equipments;
   const StatusData = [
     {
       title: "Description",

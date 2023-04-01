@@ -2,7 +2,7 @@ import logementList from "../data/logements.json";
 import "../styles/Cards.scss";
 import "../styles/Banner.scss";
 import { Link } from "react-router-dom";
-console.log(logementList);
+
 export default function Cards() {
   return (
     <article className="homePage">
@@ -10,7 +10,7 @@ export default function Cards() {
         <Link
           key={logement.id}
           className="LinkCard"
-          to={`/products/${logement.id}`}
+          to={`/logement/${logement.id}`}
         >
           <section className="homePage section">
             <img
