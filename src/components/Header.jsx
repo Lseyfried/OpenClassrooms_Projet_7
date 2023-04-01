@@ -1,6 +1,7 @@
 import "../styles/Header.scss";
 import LOGO from "../assets/LOGO.svg";
 import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="header">

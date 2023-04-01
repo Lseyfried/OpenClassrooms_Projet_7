@@ -1,9 +1,12 @@
 @media screen and (max-width: 768px) {
-  .enTete {
+  body .enTete {
     flex-direction: column;
+    margin-bottom: 0;
   }
   .enTete .ownerProduct {
+    display: flex;
     flex-direction: initial;
+    justify-content: space-between;
   }
   ul {
     align-self: auto;
@@ -12,6 +15,18 @@
     font-size: 12px;
     align-items: center;
     padding: 14px;
+    width: 88px;
+    height: 10px;
+    box-sizing: content-box;
+    white-space: nowrap;
+  }
+  .img-logement {
+    width: 60px;
+    height: 55px;
+  }
+  article .nameOwner {
+    text-align: center;
+    padding: 12px;
   }
 }
 .articleProduct {
@@ -19,7 +34,7 @@
   flex-direction: column;
   margin: 0;
   justify-content: inherit;
-  width: auto;
+  max-width: 100%;
 }
 
 .titleProduct {
@@ -34,7 +49,12 @@
   margin-right: auto;
   margin: 0;
 }
-
+.img-cover {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 600px;
+}
 .ListProduct {
   display: flex;
   justify-content: space-between;
@@ -67,14 +87,15 @@
   margin: 0;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  width: auto;
+  max-width: 100%;
   flex-direction: column-reverse;
 }
 .img-logement {
   border-radius: 95%;
   display: flex;
   align-self: center;
-  margin-left: 10px;
+  // margin-left: 10px;
+  max-width: 100%;
 }
 .nameOwner {
   font-size: 18px;
@@ -82,6 +103,7 @@
   flex-direction: column;
   margin: auto;
   width: 80px;
+  padding: 22px;
 }
 
 .flex-row {

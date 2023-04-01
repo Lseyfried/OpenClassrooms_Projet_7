@@ -5,10 +5,13 @@ import { Routes, Route } from "react-router-dom";
 import LogementCard from "./pages/LogementCard";
 import APropos from "./pages/APropos";
 import ErrorPage from "./pages/ErrorPage";
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./styles/Home.scss";
 export default function Router() {
   return (
-    <>
+    <div className="body">
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/A-Propos" element={<APropos />} />
@@ -16,6 +19,7 @@ export default function Router() {
         <Route path="/error" element={<ErrorPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </>
+      <Footer />
+    </div>
   );
 }

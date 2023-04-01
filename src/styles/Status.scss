@@ -1,7 +1,6 @@
 @media screen and (max-width: 768px) {
   .suiteAccordeon {
     flex-direction: column;
-    height: 200px;
   }
 }
 
@@ -42,6 +41,8 @@
 .suiteAccordeon {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+  align-items: center;
 }
 .content {
   color: #ff6060;

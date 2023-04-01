@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../styles/APropos.scss";
 import Arrow from "../assets/Arrow.png";
 import ArrowUp from "../assets/ArrowUp.png";
-// Qu'un seul collaspse composant
-export default function AccordionApropos({ title, content }) {
+
+export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <article className="Propos_unList marge-article pad-article rounded">
@@ -17,7 +17,7 @@ export default function AccordionApropos({ title, content }) {
           )}
         </div>
       </button>
-      {isOpen && <p className="content">{content}</p>}
+      {isOpen && <div className="content">{content}</div>}
     </article>
   );
 }

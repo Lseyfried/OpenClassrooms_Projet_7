@@ -1,16 +1,14 @@
 import "../styles/Home.scss";
-import Card from "../components/Card";
-import Header from "../components/Header";
+import Cards from "../components/Cards";
+
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+
 function Home() {
   return (
-    <div className="body">
-      <Header />
+    <article>
       <Banner />
-      <Card />
-      <Footer />
-    </div>
+      <Cards />
+    </article>
   );
 }
 

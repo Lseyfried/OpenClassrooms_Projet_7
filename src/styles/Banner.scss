@@ -1,10 +1,7 @@
 @media screen and (max-width: 425px) {
-  body .img-Banner {
-    // height: 60px;
-  }
   .img-Banner .bg-string {
-    top: 30%;
-    left: 50%;
+    top: 20%;
+    left: 160px;
     font-size: 1rem;
   }
 }
@@ -30,9 +27,9 @@
   display: flex;
   color: white;
   position: absolute;
-  // font-size: 2rem;
-  top: 33%;
-  left: 50%;
+  font-size: 2.3em;
+  top: 28%;
+  left: 720px;
   transform: translate(-50%, -50%);
   text-align: center;
 }

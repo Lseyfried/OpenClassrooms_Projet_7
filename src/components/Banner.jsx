@@ -6,12 +6,7 @@ export default function Banner() {
   return (
     <div className="img-Banner">
       <Link to="/">
-        <img
-          width="100%"
-          src={bgImage}
-          alt="chaîne de montagne"
-          className="Bg-img"
-        />
+        <img src={bgImage} alt="chaîne de montagne" className="Bg-img" />
       </Link>
       <h1 className="bg-string">{title}</h1>
     </div>

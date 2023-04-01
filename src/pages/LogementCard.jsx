@@ -1,12 +1,9 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 
 import { useParams, useNavigate } from "react-router-dom";
 import logementList from "../data/logements.json";
 import "../styles/LogementCard.scss";
 import Stars from "../components/Stars";
-import Status from "../components/Status";
 import DataStatus from "../components/DataStatus";
 import Caroussel from "../components/Caroussel";
 
@@ -30,14 +27,7 @@ export default function LogementCard() {
   const tags = logementProduct.tags;
   return (
     <div className="body">
-      <Header />
-
-      <img
-        width="100%"
-        height="500px"
-        src={logementProduct.cover}
-        alt="couverture"
-      />
+      <img src={logementProduct.cover} alt="couverture" className="img-cover" />
       <article className="enTete">
         <article className="articleProduct">
           <h1 className="titleProduct">{logementProduct.title}</h1>
@@ -66,19 +56,10 @@ export default function LogementCard() {
           </article>
         </article>
       </article>
-      {/* Revoir la structure */}
-      <article className="divised">
-        <DataStatus />
-      </article>
-      <article className="divised">
-        <Status />
-      </article>
+      <DataStatus />
       <article className="carroussel">
         <Caroussel />
       </article>
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }

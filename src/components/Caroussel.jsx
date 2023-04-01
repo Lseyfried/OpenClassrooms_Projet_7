@@ -25,18 +25,13 @@ const Caroussel = () => {
     <div className="carousel">
       <div
         className="carousel-slide"
-        style={{ left: -currentIndex * 100 + "%" }} //essayer aussi opacité
+        style={{ left: -currentIndex * 100 + "%" }}
       >
-        {images.map(
-          (
-            image,
-            index //images[currentindex]
-          ) => (
-            <div key={index} className="carousel-item">
-              <img src={image} alt={`Slide ${index}`} />
-            </div>
-          )
-        )}
+        {images.map((image, index) => (
+          <div key={image} className="carousel-item">
+            <img src={images[currentIndex]} alt={`Slide ${index}`} />
+          </div>
+        ))}
       </div>
       <button className="carousel-prev" onClick={goToPrevSlide}>
         <img src={leftArrow} alt="fleche gauche" />

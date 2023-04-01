@@ -8,7 +8,6 @@ export default function Stars() {
   const { id } = useParams();
   const logementProduct = logementList.find((rating) => rating.id === id);
   const rate = logementProduct.rating;
-  //Construction d'un Array de 5 éléments qu'on rempli avec les étoiles
   const fullStars = Array(5).fill(
     <img src={stars} alt="Full star" className="redStar" />
   );

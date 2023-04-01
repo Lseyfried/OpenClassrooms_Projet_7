@@ -12,15 +12,11 @@
     max-width: 205px;
     padding: 10px;
   }
-  // li {
-  //   // font-size: 12px;
-  // }
 }
 
 a {
   color: #ff6060;
   text-decoration: none;
-  height: 30px;
 }
 
 ul {
@@ -31,7 +27,6 @@ ul {
   li {
     display: flex;
     width: 150px;
-    // font-size: 24px;
   }
 }
 
@@ -49,9 +44,7 @@ ul {
     text-decoration-line: none;
     display: flex;
     justify-content: space-around;
-    // width: 20%;
     white-space: nowrap;
-    // height: 20px;
   }
   &:hover {
     color: black;

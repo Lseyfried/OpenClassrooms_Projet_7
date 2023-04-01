@@ -4,13 +4,13 @@
     margin-top: 50px;
   }
   .homePage .section {
-    width: clamp(209px, 270px, 285px);
+    width: clamp(209px, 300px, 270px);
   }
   .homePage .section-img {
-    width: clamp(209px, 270px, 285px);
+    width: clamp(209px, 300px, 270px);
   }
   .homePage .section .log-title {
-    top: 356px;
+    top: 262px;
     bottom: 546px;
     left: 9px;
     right: 10px;
@@ -30,8 +30,8 @@
   section {
     position: relative;
     border-radius: 10px;
-    width: 340px;
-    height: 500px;
+    width: clamp(209px, 300px, 270px);
+    height: 400px;
     justify-content: space-around;
     margin: 25px;
     display: flex;
@@ -39,6 +39,8 @@
     flex-wrap: wrap;
     transition: transform 0.3s ease-in-out;
     .section-img {
+      width: clamp(209px, 300px, 270px);
+      height: 400px;
       flex-grow: 1;
       display: flex;
       object-fit: cover;
@@ -51,7 +53,7 @@
       display: flex;
       flex-wrap: wrap;
       position: absolute;
-      top: 380px;
+      top: 60%;
       bottom: 500px;
       left: 10px;
       right: 10px;

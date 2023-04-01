@@ -1,18 +1,17 @@
 import "../styles/APropos.scss";
 import "../styles/Header.scss";
 import "../styles/Home.scss";
-import Header from "../components/Header";
+
 import "../styles/Banner.scss";
 import { Link } from "react-router-dom";
 import imageBanner from "../assets/background-Apropos.png";
-import Footer from "../components/Footer";
-import { accordionData } from "../components/accordionData";
-import AccordionApropos from "../components/AccordionApropos";
+
+import accordionData from "../data/accordionData";
+import Collapse from "../components/Collapse";
 
 export default function APropos() {
   return (
-    <div className="body">
-      <Header />
+    <article>
       <div className="img-BannerApropos">
         <Link to="/">
           <img
@@ -26,11 +25,8 @@ export default function APropos() {
       </div>
 
       {accordionData.map(({ title, content, index }) => (
-        <AccordionApropos title={title} content={content} key={index} />
+        <Collapse title={title} content={content} key={index} />
       ))}
-      {/* Collapse comme nom de composant */}
-
-      <Footer />
-    </div>
+    </article>
   );
 }

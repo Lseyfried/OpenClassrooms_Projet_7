@@ -11,6 +11,9 @@ article {
     border-radius: 10px;
     object-fit: cover;
   }
+  .rouded {
+    width: auto;
+  }
 }
 
 .Propos_title {
@@ -72,5 +75,7 @@ article {
   &.rounded {
     border-radius: 10px;
     background-color: #ff6060;
+    margin: 10px;
+    width: 100%;
   }
 }
