@@ -40,7 +40,7 @@
   left: 10px;
   right: 10px;
 }
-.log-title:hover {
+.section:hover {
   cursor: pointer;
   transform: scale(1.12);
   z-index: 1;
@@ -66,7 +66,6 @@ section {
   border-radius: 10px;
 }
 .LinkCard {
-  height: 530px;
   display: flex;
   flex-wrap: wrap;
 }
