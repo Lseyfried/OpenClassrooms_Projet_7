@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/index.css";
 import Home from "./pages/Home";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LogementCard from "./pages/LogementCard";
 import APropos from "./pages/APropos";
 import ErrorPage from "./pages/ErrorPage";
@@ -24,7 +24,7 @@ export default function Router() {
           element={<LogementCard logementId={productID} />}
         />
         <Route path="/error" element={<ErrorPage />} />
-        <Route path="*" element={<Navigate to="/error" />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>

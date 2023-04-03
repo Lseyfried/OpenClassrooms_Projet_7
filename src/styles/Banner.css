@@ -1,23 +1,24 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .img-Banner .bg-string {
-    top: 20%;
+    top: 30%;
     left: 118px;
     font-size: 1rem;
     text-align: left;
+    margin-left: 20px;
   }
   .Bg-img {
     height: 100px;
   }
   article .img-Banner {
-    padding-bottom: 60%;
+    height: 120px;
   }
 }
 
 .img-Banner {
   position: relative;
   width: 100%;
-
-  padding-bottom: 25%;
+  margin-bottom: 30px;
+  height: 225px;
 }
 .Bg-img {
   position: absolute;
@@ -35,7 +36,7 @@
   color: white;
   position: absolute;
   font-size: 2.3em;
-  top: 28%;
+  top: 34%;
   left: 48%;
   transform: translate(-50%, -50%);
   text-align: center;
