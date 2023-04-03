@@ -4,11 +4,10 @@
     margin-top: 50px;
   }
   .homePage .section {
-    width: clamp(209px, 270px, 330px);
+    width: 100%;
+    align-content: center;
   }
-  .homePage .section-img {
-    width: clamp(209px, 270px, 330px);
-  }
+
   .homePage .section .log-title {
     top: 262px;
     bottom: 546px;
