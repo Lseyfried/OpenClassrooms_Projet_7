@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/index.scss";
+import "./styles/index.css";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import LogementCard from "./pages/LogementCard";
@@ -7,7 +7,7 @@ import APropos from "./pages/APropos";
 import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./styles/Home.scss";
+import "./styles/Home.css";
 import { useParams } from "react-router-dom";
 import logementList from "./data/logements.json";
 export default function Router() {

@@ -1,4 +1,4 @@
-import "../styles/Banner.scss";
+import "../styles/Banner.css";
 import bgImage from "../assets/IMG.svg";
 import { Link } from "react-router-dom";
 export default function Banner() {

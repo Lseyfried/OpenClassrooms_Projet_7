@@ -1,0 +1,92 @@
+@media screen and (max-width: 425px) {
+  .suiteAccordeon .Propos_unList {
+    width: 100%;
+    height: auto;
+  }
+}
+button {
+  cursor: pointer;
+}
+article {
+  background-color: white;
+}
+
+.imgBannerApropos {
+  margin-bottom: 50px;
+}
+
+.Bg-Apropos {
+  border-radius: 10px;
+  object-fit: cover;
+}
+.rouded {
+  width: auto;
+}
+.Propos_title {
+  padding: 9px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Propos_unList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ff6060;
+  margin-bottom: 10px;
+  width: 45%;
+  height: 61px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align-last: left;
+  color: white;
+}
+.accordeonMenu {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff6060;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.arrowAccordeon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+  padding: 0;
+  margin: 10px;
+}
+.content {
+  color: #ff6060;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+.rounded {
+  border-radius: 10px;
+  background-color: #ff6060;
+  margin: 10px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 44px;
+}
+.accordionMenuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.ListesdeAPropos {
+  width: 100%;
+  height: auto;
+}

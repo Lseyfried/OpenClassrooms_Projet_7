@@ -1,4 +1,4 @@
-import "../styles/Home.scss";
+import "../styles/Home.css";
 import Cards from "../components/Cards";
 
 import Banner from "../components/Banner";

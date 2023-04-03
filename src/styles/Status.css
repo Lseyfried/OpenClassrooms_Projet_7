@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
-  .suiteAccordeon {
+  body .suiteAccordeon {
     flex-direction: column;
+    margin-bottom: auto;
   }
 }
 
@@ -21,19 +22,18 @@
 }
 .listStatus {
   width: 45%;
-  &_descriptionStatus {
-    font-size: 18px;
-    border: none;
-    color: white;
-    width: 100%;
-    background-color: #ff6060;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
 }
-
+.descriptionStatus {
+  font-size: 18px;
+  border: none;
+  color: white;
+  width: 100%;
+  background-color: #ff6060;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 .status-row {
   justify-content: space-between;
 }
@@ -41,7 +41,7 @@
 .suiteAccordeon {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   align-items: center;
 }
 .content {

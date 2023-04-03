@@ -1,4 +1,4 @@
-import "../styles/Starsrattings.scss";
+import "../styles/Starsrattings.css";
 
 import { useParams } from "react-router-dom";
 import logementList from "../data/logements.json";

@@ -1,6 +1,6 @@
 import logementList from "../data/logements.json";
-import "../styles/Cards.scss";
-import "../styles/Banner.scss";
+import "../styles/Cards.css";
+import "../styles/Banner.css";
 import { Link } from "react-router-dom";
 
 export default function Cards() {
@@ -12,7 +12,7 @@ export default function Cards() {
           className="LinkCard"
           to={`/logement/${logement.id}`}
         >
-          <section className="homePage section">
+          <section className="section">
             <img
               src={logement.pictures[0]}
               alt="couverture"

@@ -1,4 +1,4 @@
-import "../styles/Caroussel.scss";
+import "../styles/Caroussel.css";
 import { useState } from "react";
 import leftArrow from "../assets/leftArrow.png";
 import rightArrow from "../assets/rightArrow.png";

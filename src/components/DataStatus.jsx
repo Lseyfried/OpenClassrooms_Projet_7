@@ -1,11 +1,6 @@
-// import { useParams } from "react-router-dom";
-// import logementList from "../data/logements.json";
-// import AccordionStatus from "./AccordionStatus";
-import "../styles/Status.scss";
+import "../styles/Status.css";
 import Collapse from "./Collapse";
 export default function DataStatus({ logementId }) {
-  // const { id } = useParams();
-  // const logementProduct = logementList.find((logement) => logement.id === id);
   const description = logementId.description;
   const equipement = logementId.equipments;
   const StatusData = [

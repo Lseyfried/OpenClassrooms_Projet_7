@@ -3,7 +3,7 @@ import stars from "../assets/Star.svg";
 import whiteStar from "../assets/whiteStar.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import logementList from "../data/logements.json";
-import "../styles/LogementCard.scss";
+import "../styles/LogementCard.css";
 import Stars from "../components/Stars";
 import DataStatus from "../components/DataStatus";
 import Caroussel from "../components/Caroussel";

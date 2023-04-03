@@ -14,7 +14,7 @@
   ul .tagsProduct {
     font-size: 12px;
     align-items: center;
-    padding: 14px;
+    padding: 19px;
     width: 88px;
     height: 10px;
     box-sizing: content-box;
@@ -96,7 +96,7 @@
   border-radius: 95%;
   display: flex;
   align-self: center;
-  // margin-left: 10px;
+  /* // margin-left: 10px; */
   max-width: 100%;
 }
 .nameOwner {

@@ -1,8 +1,15 @@
 @media screen and (max-width: 425px) {
   .img-Banner .bg-string {
     top: 20%;
-    left: 160px;
+    left: 118px;
     font-size: 1rem;
+    text-align: left;
+  }
+  .Bg-img {
+    height: 100px;
+  }
+  article .img-Banner {
+    padding-bottom: 60%;
   }
 }
 
@@ -11,16 +18,16 @@
   width: 100%;
 
   padding-bottom: 25%;
-  .Bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+}
+.Bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-    object-fit: cover;
-    border-radius: 25px;
-    cursor: pointer;
-  }
+  object-fit: cover;
+  border-radius: 25px;
+  cursor: pointer;
 }
 .bg-string {
   cursor: pointer;

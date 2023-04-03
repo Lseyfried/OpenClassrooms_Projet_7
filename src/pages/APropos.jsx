@@ -1,15 +1,29 @@
-import "../styles/APropos.scss";
-import "../styles/Header.scss";
-import "../styles/Home.scss";
+import "../styles/APropos.css";
+import "../styles/Header.css";
+import "../styles/Home.css";
 
-import "../styles/Banner.scss";
+import "../styles/Banner.css";
 import { Link } from "react-router-dom";
 import imageBanner from "../assets/background-Apropos.png";
-
+import { useEffect } from "react";
 import accordionData from "../data/accordionData";
 import Collapse from "../components/Collapse";
 
 export default function APropos() {
+  useEffect(() => {
+    const fromProposUnList = document.querySelectorAll(
+      ".Propos_unList, .ListesdeAPropos"
+    );
+    fromProposUnList.forEach((element) => {
+      element.classList.add("ListesdeAPropos");
+    });
+
+    return () => {
+      fromProposUnList.forEach((element) => {
+        element.classList.remove("ListesdeAPropos");
+      });
+    };
+  }, []);
   return (
     <article>
       <div className="img-BannerApropos">
@@ -23,10 +37,11 @@ export default function APropos() {
           />
         </Link>
       </div>
-
-      {accordionData.map(({ title, content, index }) => (
-        <Collapse title={title} content={content} key={index} />
-      ))}
+      <article className="accordionMenuList">
+        {accordionData.map(({ title, content, index }) => (
+          <Collapse title={title} content={content} key={index} />
+        ))}
+      </article>
     </article>
   );
 }
