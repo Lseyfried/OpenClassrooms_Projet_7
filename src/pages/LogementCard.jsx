@@ -8,7 +8,7 @@ import Stars from "../components/Stars";
 import DataStatus from "../components/DataStatus";
 import Caroussel from "../components/Caroussel";
 
-export default function LogementCard({ logementId }) {
+export default function LogementCard() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [logementProduct, setLogementProduct] = useState(null);
