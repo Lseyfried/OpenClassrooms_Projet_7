@@ -14,7 +14,7 @@ export default function Router() {
     <div className="body">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/OpenClassrooms_Projet_7" element={<Home />} />
         <Route path="/A-Propos" element={<APropos />} />
         <Route path="/logement/:id" element={<LogementCard />} />
         <Route path="/error" element={<ErrorPage />} />
