@@ -10,7 +10,7 @@ export default function ErrorPage() {
       <h2 className="errorPage-title">
         Oups! La page que vous demandez n'existe pas.
       </h2>
-      <Link to="/">
+      <Link to="/" className="linkError">
         <h2 className="backToHome">Retournez sur la page d'accueil</h2>
       </Link>
     </article>
