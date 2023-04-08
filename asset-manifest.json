@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OpenClassrooms_Projet_7/static/css/main.69d0e33a.css",
+    "main.css": "/OpenClassrooms_Projet_7/static/css/main.7b472866.css",
     "main.js": "/OpenClassrooms_Projet_7/static/js/main.4344ad5e.js",
     "static/media/IMG.svg": "/OpenClassrooms_Projet_7/static/media/IMG.159d69c8cac82732199930e2e78c6b65.svg",
     "static/media/background-Apropos.png": "/OpenClassrooms_Projet_7/static/media/background-Apropos.abab3f12f4cb82f1dfa1.png",
@@ -9,11 +9,11 @@
     "index.html": "/OpenClassrooms_Projet_7/index.html",
     "static/media/Star.svg": "/OpenClassrooms_Projet_7/static/media/Star.325cf1d54d109e062e0d0468f6412f00.svg",
     "static/media/whiteStar.svg": "/OpenClassrooms_Projet_7/static/media/whiteStar.06dccca447400012db124c595a41e219.svg",
-    "main.69d0e33a.css.map": "/OpenClassrooms_Projet_7/static/css/main.69d0e33a.css.map",
+    "main.7b472866.css.map": "/OpenClassrooms_Projet_7/static/css/main.7b472866.css.map",
     "main.4344ad5e.js.map": "/OpenClassrooms_Projet_7/static/js/main.4344ad5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.69d0e33a.css",
+    "static/css/main.7b472866.css",
     "static/js/main.4344ad5e.js"
   ]
 }
