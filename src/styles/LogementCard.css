@@ -57,7 +57,6 @@
 }
 .ListProduct {
   display: flex;
-  justify-content: space-between;
   max-width: 100%;
   flex-wrap: wrap;
   align-self: auto;
@@ -70,10 +69,10 @@
   padding: 9px;
   display: flex;
   margin: 10px;
-
   justify-content: center;
   cursor: pointer;
-  height: 20px;
+  height: 33px;
+  align-items: center;
   box-sizing: content-box;
 }
 .enTete {

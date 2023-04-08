@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import stars from "../assets/Star.svg";
-import whiteStar from "../assets/whiteStar.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import logementList from "../data/logements.json";
 import "../styles/LogementCard.css";
@@ -13,6 +11,7 @@ export default function LogementCard() {
   const navigate = useNavigate();
   const [logementProduct, setLogementProduct] = useState(null);
   const product = logementList.find((logement) => logement.id === id);
+  const rate = product.rating;
   useEffect(() => {
     const product = logementList.find((logement) => logement.id === id);
     if (product) {
@@ -28,7 +27,9 @@ export default function LogementCard() {
   const tags = logementProduct.tags;
   return (
     <div className="body">
-      <img src={logementProduct.cover} alt="couverture" className="img-cover" />
+      <article className="carroussel">
+        <Caroussel logements={product} />
+      </article>
       <article className="enTete">
         <article className="articleProduct">
           <h1 className="titleProduct">{logementProduct.title}</h1>
@@ -43,7 +44,7 @@ export default function LogementCard() {
           </ul>
         </article>
         <article className="ownerProduct">
-          <Stars stars={stars} whiteStar={whiteStar} logement={id} />
+          <Stars rate={rate} />
           <article className="flex-row">
             <h2 className="nameOwner"> {logementProduct.host.name}</h2>
 
@@ -58,9 +59,6 @@ export default function LogementCard() {
         </article>
       </article>
       <DataStatus logementId={product} />
-      <article className="carroussel">
-        <Caroussel logements={product} />
-      </article>
     </div>
   );
 }

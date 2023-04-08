@@ -2,6 +2,7 @@
   body .header {
     align-self: center;
     height: 74px;
+    margin-bottom: 5px;
   }
   .header .nav {
     flex-direction: column;
@@ -12,10 +13,15 @@
     max-width: 205px;
     padding: 10px;
   }
+  ul li {
+    margin-left: 20px;
+    font-size: 12px;
+  }
 }
 .logo-header {
   max-width: 100%;
   height: 75px;
+  width: clamp(100px, 210px, 210px);
 }
 a {
   color: #ff6060;
@@ -30,14 +36,14 @@ ul {
 
 li {
   display: flex;
-  width: 150px;
+  margin-left: 57px;
+  font-size: 24px;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 80px;
   max-width: 100%;
-  height: 80px;
 }
 .img-header {
   object-fit: contain;
@@ -54,8 +60,8 @@ li {
 
 .linkHeader {
   border-bottom: solid 2px white;
+  text-decoration: underline;
 }
 .linkHeader:hover {
-  border-bottom: solid 2px #ff6060;
   cursor: pointer;
 }

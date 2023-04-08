@@ -2,6 +2,9 @@
   .carousel-item {
     height: 250px;
   }
+  .carousel-item img {
+    height: 385px;
+  }
 }
 
 .carousel {
@@ -9,7 +12,6 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  margin-bottom: 100px;
 }
 
 .carousel-slide {
@@ -31,7 +33,7 @@
 .carousel-item img {
   object-fit: cover;
   max-width: 100%;
-  height: auto;
+
   width: 100%;
 }
 

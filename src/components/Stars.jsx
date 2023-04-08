@@ -1,17 +1,13 @@
 import "../styles/Starsrattings.css";
+import stars from "../assets/Star.svg";
+import whiteStars from "../assets/whiteStar.svg";
 
-import { useParams } from "react-router-dom";
-import logementList from "../data/logements.json";
-//props pour stars
-export default function Stars({ stars, whiteStar }) {
-  const { id } = useParams();
-  const logementProduct = logementList.find((rating) => rating.id === id);
-  const rate = logementProduct.rating;
+export default function Stars({ rate }) {
   const fullStars = Array(5).fill(
     <img src={stars} alt="Full star" className="redStar" />
   );
   const emptyStars = Array(5).fill(
-    <img src={whiteStar} alt="Empty Star" className="greyStar" />
+    <img src={whiteStars} alt="Empty Star" className="greyStar" />
   );
   return (
     <div className="ratingStars">

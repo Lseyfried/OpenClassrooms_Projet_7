@@ -41,13 +41,12 @@
 .suiteAccordeon {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 200px;
-  align-items: center;
 }
 .content {
   color: #ff6060;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 .equipementColumn {
   display: flex;

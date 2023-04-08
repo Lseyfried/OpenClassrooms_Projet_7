@@ -1,5 +1,6 @@
 import "../styles/Status.css";
 import Collapse from "./Collapse";
+
 export default function DataStatus({ logementId }) {
   const description = logementId.description;
   const equipement = logementId.equipments;
@@ -7,7 +8,7 @@ export default function DataStatus({ logementId }) {
     {
       title: "Description",
       content: description,
-      index: 1,
+      id: 1,
     },
     {
       title: "Equipements",
@@ -23,7 +24,7 @@ export default function DataStatus({ logementId }) {
           )}
         </div>
       ),
-      index: 2,
+      id: 2,
     },
   ];
 

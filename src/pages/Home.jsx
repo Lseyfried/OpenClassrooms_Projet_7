@@ -5,10 +5,10 @@ import Banner from "../components/Banner";
 
 function Home() {
   return (
-    <article>
+    <main>
       <Banner />
       <Cards />
-    </article>
+    </main>
   );
 }
 

@@ -37,7 +37,6 @@ article {
   background-color: #ff6060;
   margin-bottom: 10px;
   width: 45%;
-  height: 61px;
   margin-bottom: 10px;
   border-radius: 10px;
   text-align-last: left;
@@ -70,7 +69,7 @@ article {
   color: #ff6060;
   padding: 10px;
   background-color: #f2f2f2;
-  margin: 0;
+  margin-bottom: 0;
 }
 .rounded {
   border-radius: 10px;

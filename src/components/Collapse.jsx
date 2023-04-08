@@ -5,6 +5,7 @@ import ArrowUp from "../assets/ArrowUp.png";
 
 export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <article className="Propos_unList">
       <button className="accordeonMenu" onClick={() => setIsOpen(!isOpen)}>
