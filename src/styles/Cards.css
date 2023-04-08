@@ -4,20 +4,19 @@
   }
   .homePage .section {
     align-content: center;
-    height: 320px;
-    width: clamp(320px, 215px, 251px);
+    height: 280px;
+    width: clamp(315px, 215px, 251px);
   }
 
   .homePage .section .log-title {
     top: 170px;
     bottom: 546px;
-    left: 9px;
+    left: 14px;
     right: 10px;
     font-size: 23px;
   }
   section .section-img {
-    height: 320px;
-    width: clamp(320px, 215px, 251px);
+    width: clamp(280px, 215px, 251px);
   }
 }
 
@@ -62,7 +61,6 @@ section {
 }
 .section-img {
   width: clamp(281px, 439px, 362px);
-  height: 362px;
   flex-grow: 1;
   display: flex;
   object-fit: cover;
