@@ -85,7 +85,7 @@
 }
 .ownerProduct {
   display: flex;
-  margin: 0;
+  margin: 10px;
   flex-wrap: nowrap;
   justify-content: flex-end;
   max-width: 100%;
@@ -95,7 +95,6 @@
   border-radius: 95%;
   display: flex;
   align-self: center;
-  /* // margin-left: 10px; */
   max-width: 100%;
 }
 .nameOwner {
