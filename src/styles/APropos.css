@@ -31,16 +31,8 @@ article {
   justify-content: space-between;
 }
 .Propos_unList {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #ff6060;
   margin-bottom: 10px;
   width: 45%;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  text-align-last: left;
-  color: white;
 }
 .accordeonMenu {
   color: white;

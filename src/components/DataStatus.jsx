@@ -14,14 +14,9 @@ export default function DataStatus({ logementId }) {
       title: "Equipements",
       content: (
         <div className="equipementColumn">
-          {equipement.map(
-            (
-              item,
-              index //direct pae logement appeler collapse
-            ) => (
-              <div key={index}>{item}</div>
-            )
-          )}
+          {equipement.map((item, index) => (
+            <div key={index}>{item}</div>
+          ))}
         </div>
       ),
       id: 2,
