@@ -25,7 +25,7 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1240px;
+  max-width: 100%;
   justify-content: center;
   border-radius: 10px;
 }
@@ -49,8 +49,8 @@
 section {
   position: relative;
   border-radius: 10px;
-  width: clamp(281px, 439px, 236px);
-  height: 326px;
+  width: clamp(281px, 439px, 362px);
+  height: 362px;
   justify-content: space-around;
   margin: 25px;
   display: flex;
@@ -59,8 +59,8 @@ section {
   transition: transform 0.3s ease-in-out;
 }
 .section-img {
-  width: clamp(281px, 439px, 236px);
-  height: 326px;
+  width: clamp(281px, 439px, 362px);
+  height: 362px;
   flex-grow: 1;
   display: flex;
   object-fit: cover;
