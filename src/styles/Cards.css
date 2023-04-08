@@ -4,7 +4,8 @@
   }
   .homePage .section {
     align-content: center;
-    height: 283px;
+    height: 320px;
+    width: clamp(320px, 215px, 251px);
   }
 
   .homePage .section .log-title {
@@ -14,8 +15,9 @@
     right: 10px;
     font-size: 23px;
   }
-  .section-img {
-    height: 283px;
+  section .section-img {
+    height: 320px;
+    width: clamp(320px, 215px, 251px);
   }
 }
 
