@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
   .homePage {
-    /* flex-direction: column; */
     margin-top: 50px;
   }
   .homePage .section {
@@ -9,7 +8,7 @@
   }
 
   .homePage .section .log-title {
-    top: 262px;
+    top: 170px;
     bottom: 546px;
     left: 9px;
     right: 10px;

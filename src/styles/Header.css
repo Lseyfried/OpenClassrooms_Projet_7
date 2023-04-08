@@ -17,6 +17,9 @@
     margin-left: 20px;
     font-size: 12px;
   }
+  header .logo-header {
+    width: 140px;
+  }
 }
 .logo-header {
   max-width: 100%;
