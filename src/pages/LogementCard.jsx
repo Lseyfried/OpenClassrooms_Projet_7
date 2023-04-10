@@ -11,7 +11,8 @@ export default function LogementCard() {
   const navigate = useNavigate();
   const [logementProduct, setLogementProduct] = useState(null);
   const product = logementList.find((logement) => logement.id === id);
-  const rate = product.rating;
+  const rate = logementList.rating;
+
   useEffect(() => {
     const product = logementList.find((logement) => logement.id === id);
     if (product) {
