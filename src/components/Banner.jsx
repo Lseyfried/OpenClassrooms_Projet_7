@@ -1,5 +1,6 @@
 import "../styles/Banner.css";
 import bgImage from "../assets/IMG.svg";
+
 export default function Banner() {
   const title = "Chez vous, partout et ailleurs";
   return (
