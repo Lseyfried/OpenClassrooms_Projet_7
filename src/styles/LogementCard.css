@@ -13,6 +13,9 @@
   ul {
     align-self: auto;
   }
+  article .flex-row {
+    margin-bottom: 0;
+  }
   ul .tagsProduct {
     font-size: 12px;
     align-items: center;
@@ -23,12 +26,14 @@
     white-space: nowrap;
   }
   .img-logement {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
   article .nameOwner {
     text-align: center;
-    padding: 14px;
+    padding: 5px;
+    font-size: 12px;
+    width: 60px;
   }
 }
 .articleProduct {
