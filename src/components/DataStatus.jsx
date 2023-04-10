@@ -8,7 +8,6 @@ export default function DataStatus({ logementId }) {
     {
       title: "Description",
       content: description,
-      id: 1,
     },
     {
       title: "Equipements",
@@ -19,7 +18,6 @@ export default function DataStatus({ logementId }) {
           ))}
         </div>
       ),
-      id: 2,
     },
   ];
 
