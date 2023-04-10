@@ -19,6 +19,7 @@
 .carroussel {
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 15px;
 }
 .aproposArticle {
   padding-left: 50px;
@@ -53,6 +54,7 @@ article {
 .Propos_unList {
   margin-bottom: 10px;
   width: 45%;
+  margin-bottom: 25px;
 }
 .accordeonMenu {
   color: white;
