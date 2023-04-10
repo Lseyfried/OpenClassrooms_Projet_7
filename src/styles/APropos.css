@@ -3,6 +3,26 @@
     width: 100%;
     height: auto;
   }
+  article .aproposArticle {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body .aproposArticle {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body .carroussel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.carroussel {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.aproposArticle {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 button {
   cursor: pointer;

@@ -2,6 +2,8 @@
   body .enTete {
     flex-direction: column;
     margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .enTete .ownerProduct {
     display: flex;
@@ -80,8 +82,10 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100%;
+
   margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .ownerProduct {
   display: flex;

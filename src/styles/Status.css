@@ -2,6 +2,8 @@
   body .suiteAccordeon {
     flex-direction: column;
     margin-bottom: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -41,6 +43,8 @@
 .suiteAccordeon {
   display: flex;
   justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .content {
   color: #ff6060;

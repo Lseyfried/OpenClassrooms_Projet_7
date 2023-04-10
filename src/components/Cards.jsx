@@ -18,6 +18,7 @@ export default function Cards() {
               alt="couverture"
               className="section-img"
             />
+            <div className="rectanglelinear "></div>
             <h2 className="log-title">{logement.title}</h2>
           </section>
         </Link>

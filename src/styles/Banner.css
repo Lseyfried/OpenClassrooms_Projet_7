@@ -14,14 +14,18 @@
   main .img-Banner {
     height: 100px;
     padding-bottom: 0;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
 .img-Banner {
   position: relative;
-  width: 100%;
+
   margin-bottom: 30px;
   height: 223px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 .Bg-img {
   position: absolute;

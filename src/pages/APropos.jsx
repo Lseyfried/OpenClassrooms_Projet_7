@@ -25,7 +25,7 @@ export default function APropos() {
     };
   }, []);
   return (
-    <article>
+    <article className="aproposArticle">
       <div className="img-BannerApropos">
         <Link to="/">
           <img
