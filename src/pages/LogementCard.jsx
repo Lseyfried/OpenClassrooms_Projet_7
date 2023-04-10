@@ -10,8 +10,8 @@ export default function LogementCard() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [logementProduct, setLogementProduct] = useState(null);
-  const product = logementList.find((logement) => logement.id === id);
-  const rate = logementList.rating;
+
+  const productList = logementList.find((logement) => logement.id === id);
 
   useEffect(() => {
     const product = logementList.find((logement) => logement.id === id);
@@ -25,11 +25,12 @@ export default function LogementCard() {
   if (!logementProduct) {
     return null;
   }
+  const rate = productList.rating;
   const tags = logementProduct.tags;
   return (
     <div className="body">
       <article className="carroussel">
-        <Caroussel logements={product} />
+        <Caroussel logements={productList} />
       </article>
       <article className="enTete">
         <article className="articleProduct">
@@ -59,7 +60,7 @@ export default function LogementCard() {
           </article>
         </article>
       </article>
-      <DataStatus logementId={product} />
+      <DataStatus logementId={productList} />
     </div>
   );
 }
