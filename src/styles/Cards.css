@@ -1,17 +1,17 @@
 @media screen and (max-width: 768px) {
   main .homePage {
-    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    background-color: white;
   }
   .homePage .section {
     align-content: center;
-    height: 250px;
-    width: clamp(250px, 215px, 251px);
+    height: 270px;
+    width: clamp(270px, 215px, 251px);
   }
 
   .homePage .section .log-title {
-    top: 110px;
+    top: 120px;
     bottom: 546px;
     left: 14px;
     right: 10px;
@@ -54,8 +54,8 @@
 section {
   position: relative;
   border-radius: 10px;
-  width: clamp(281px, 439px, 362px);
-  height: 362px;
+  width: clamp(320px, 340px, 340px);
+  height: 340px;
   justify-content: space-around;
   margin: 25px;
   display: flex;

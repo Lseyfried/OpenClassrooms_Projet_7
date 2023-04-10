@@ -17,18 +17,18 @@
     font-size: 12px;
     align-items: center;
     padding: 19px;
-    width: 88px;
+    width: 80px;
     height: 10px;
     box-sizing: content-box;
     white-space: nowrap;
   }
   .img-logement {
-    width: 60px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
   article .nameOwner {
     text-align: center;
-    padding: 12px;
+    padding: 5px;
   }
 }
 .articleProduct {
