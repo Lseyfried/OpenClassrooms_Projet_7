@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   main .homePage {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
     background-color: white;
   }
   .homePage .section {
